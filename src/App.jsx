@@ -1,21 +1,32 @@
 import React from 'react';
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
+import { Home } from './pages/Home';
+import { About } from './pages/About';
+import { Movie } from './pages/Movie';
+import { Contact } from './pages/Contact';
 
 export const App = () => {
 
   const router = createBrowserRouter([
     {
       path: "/",
-      
+      element:<Home />
+    },
+    {
+      path: "/about",
+      element:<About />
+    },
+    {
+      path: "/movie",
+      element:<Movie />
+    },
+    {
+      path: "/contact",
+      element:<Contact />
     }
   ]);
 
 
-  return (
-    <>
-
-      <h1>Happy Dashin, Tihar, Chhat, Ekadashi!</h1>
-    </>
-  );
+  return <RouterProvider router={router} />;
 };
