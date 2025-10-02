@@ -13,25 +13,28 @@ export const App = () => {
 
     {
       path:"/",
-      element:<AppLayout />
+      element:<AppLayout />,
+      children:[
+        {
+          path: "/",
+          element:<Home />
+        },
+        {
+          path: "/about",
+          element:<About />
+        },
+        {
+          path: "/movie",
+          element:<Movie />
+        },
+        {
+          path: "/contact",
+          element:<Contact />
+        },
+      ],
     },
 
-    {
-      path: "/",
-      element:<Home />
-    },
-    {
-      path: "/about",
-      element:<About />
-    },
-    {
-      path: "/movie",
-      element:<Movie />
-    },
-    {
-      path: "/contact",
-      element:<Contact />
-    }
+    
   ]);
 
 
