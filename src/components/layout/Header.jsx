@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 export const Header = () => {
     return (
         <>
@@ -8,7 +10,7 @@ export const Header = () => {
                             <p>Get Mukti Membership, 30-day return or refund guarantee.</p>
                         </div>
                         <div className="sing_in_up">
-                            <a href="#">SIGN IN</a>
+                            <NavLink to="#">SIGN IN</NavLink>
                             <a href="#">SIGN UP</a>
                         </div>
                     </div>
@@ -16,32 +18,32 @@ export const Header = () => {
 
                 <div className="container">
                     <div className="navbar-brand">
-                        <a href="index">
+                        <NavLink to="index">
                             <p>MuktiFlix</p>
-                        </a>
+                        </NavLink>
                     </div>
 
                     <nav className="navbar">
                         <ul>
                             <li className="nav-item">
-                                <a href="/">
+                                <NavLink to="/">
                                     Home
-                                </a>
+                                </NavLink>
                             </li>
                             <li className="nav-item">
-                                <a href="/about">
+                                <NavLink to="/about">
                                     about
-                                </a>
+                                </NavLink>
                             </li>
                             <li className="nav-item">
-                                <a href="/movie">
+                                <NavLink to="/movie">
                                     movies
-                                </a>
+                                </NavLink>
                             </li>
                             <li className="nav-item">
-                                <a href="/contact">
+                                <NavLink to="/contact">
                                     contact
-                                </a>
+                                </NavLink>
                             </li>
                         </ul>
                     </nav>
