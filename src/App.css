@@ -203,6 +203,10 @@ textarea:focus-visible {
   align-items: center;
   /* justify-content: center; */
 
+  .active {
+    color: var(--main-color);
+  }
+
   & li a {
     color: var(--heading-color);
     font-weight: 600;
@@ -221,6 +225,7 @@ textarea:focus-visible {
       transition: all 0.3s linear;
     }
   }
+
   & li a:hover {
     color: var(--main-color);
   }
