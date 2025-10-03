@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 export const Footer = () => {
     return (
         <>
@@ -21,7 +23,7 @@ export const Footer = () => {
           </div>
           <div className="content_3">
             <h4>Experience</h4>
-            <a href="./contact.html">Contact Us</a>
+            <NavLink to="./contact">Contact Us</NavLink>
             <a href="" target="_blank">Payment Method</a>
             <a href="" target="_blank">Delivery</a>
             <a href="" target="_blank">Return and Exchange</a>
