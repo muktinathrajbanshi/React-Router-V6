@@ -25,7 +25,8 @@ export const Header = () => {
 
                     <nav className="navbar">
                         <ul>
-                            <li className="nav-item">
+                            <li className={({isActive}) => isActive ? "nav-link active-link" : "nav-link"
+                            }>
                                 <NavLink to="/">
                                     Home
                                 </NavLink>
