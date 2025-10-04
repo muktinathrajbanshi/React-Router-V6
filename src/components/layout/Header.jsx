@@ -44,7 +44,13 @@ export const Header = () => {
                                 </NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to="/movie">
+                                <NavLink to="/movie"
+                                style={({ isActive }) => {
+                                    return {
+                                        color: isActive ? "red" : "black",
+                                    };
+                                }}
+                                >
                                     movies
                                 </NavLink>
                             </li>
