@@ -1,4 +1,4 @@
-import { useRouteError } from "react-router-dom";
+import { NavLink, useRouteError } from "react-router-dom";
 
 export const ErrorPage = () => {
 
@@ -21,6 +21,7 @@ export const ErrorPage = () => {
                     <p className="p-b">... Back to previous page</p>
                 </div>
                 </div>
+                <NavLink to="/">Go Back To HomePage</NavLink>
             </section>
         );
     }
