@@ -1,6 +1,11 @@
 import { NavLink } from "react-router-dom";
 
 export const Header = () => {
+    const getNavLinkStyle = ({ isActive }) => {
+        return {
+            color: isActive ? "green" : "black",
+        };
+    };
     return (
         <>
             <header className="section-navbar">
@@ -32,7 +37,9 @@ export const Header = () => {
                                 </NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to="/about">
+                                <NavLink to="/about" 
+                                style={getNavLinkStyle}
+                                    >
                                     about
                                 </NavLink>
                             </li>
