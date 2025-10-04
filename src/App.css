@@ -313,3 +313,28 @@ footer {
 }
 
 /***** End Footer Section *****/
+
+/***** Error Section *****/
+
+.error-section {
+  margin-top: 15rem;
+}
+
+.error-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 50%;
+  height: 40%;
+}
+
+/***** Error End Section *****/
