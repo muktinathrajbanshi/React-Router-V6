@@ -4,5 +4,9 @@ export const Movie = () => {
     const moviesData = useLoaderData();
     console.log(moviesData);
     
-    return <h1>Movie Page</h1>;
+    return <>
+        {moviesData.search.map((curMovie) => {
+            return <Card key={curMovie.imdbID} />
+        })}
+    </>;
 };

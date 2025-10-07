@@ -8,6 +8,7 @@ import { Contact } from './pages/Contact';
 import AppLayout from './components/layout/AppLayout';
 import { ErrorPage } from './pages/ErrorPage';
 import { getMoviesData } from './api/GetAPIData';
+import { MovieDetails } from './components/UI/MovieDetails';
 // import { NotFound } from './pages/NotFound';
 
 export const App = () => {
@@ -28,9 +29,8 @@ export const App = () => {
           element:<About />
         },
         {
-          path: "/movie",
-          element:<Movie />,
-          loader:getMoviesData,
+          path: "/movie:movieID",
+          element:<MovieDetails />,
         },
         {
           path: "/contact",
