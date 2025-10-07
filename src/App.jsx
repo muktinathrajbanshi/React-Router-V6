@@ -29,6 +29,11 @@ export const App = () => {
           element:<About />
         },
         {
+          path: "/movie",
+          element:<Movie />,
+          loader: getMoviesData,
+        },
+        {
           path: "/movie:movieID",
           element:<MovieDetails />,
         },
