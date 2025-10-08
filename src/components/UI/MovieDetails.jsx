@@ -15,7 +15,8 @@ export const MovieDetails = () => {
                 </div>
                 <div className="ticket-container">
                     <div className="ticket__content">
-                        <h4 className="ticket__movie-title"></h4>
+                        <h4 className="ticket__movie-title">{Title}</h4>
+                        <p>{Plot}</p>
                         <p className="ticket__current-price">Type: </p>
                         <p className="ticket__current-price">Type: </p>
                         <button className="ticket__buy-btn">Watch now</button>
