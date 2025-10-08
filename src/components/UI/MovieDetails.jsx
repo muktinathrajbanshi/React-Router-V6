@@ -1,3 +1,14 @@
+import { useLoaderData } from "react-router-dom";
+
 export const MovieDetails = () => {
-    return <h1>Hello Movie</h1>;
+
+    // const params = useParams();
+    // console.log(params);
+    
+
+    const movieData = useLoaderData();
+    console.log(movieData);
+    
+
+    return <h1>Hello Movie {params.movieID} </h1>;
 };
