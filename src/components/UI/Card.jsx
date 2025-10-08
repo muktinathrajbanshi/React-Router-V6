@@ -2,6 +2,7 @@ import React from 'react';
 
 
 export const Card = ({ curMovie }) => {
+    const { Poster, imdbID } = curMovie;
 
   return (
     <>
