@@ -9,7 +9,37 @@ export const Contact = () => {
                     </p>
                 </div>
 
-                
+                <div className="grid grid-two--cols">
+                    <div className="contact-content">
+                        <form>
+                            <div className="grid grid-two-cols mb-3">
+                                <div>
+                                    <label htmlFor="username">full name</label>
+                                    <input 
+                                    type="text" 
+                                    name="username" 
+                                    id="username"  
+                                    required
+                                    autoComplete="off"
+                                    placeholder="enter full name"
+                                    />
+                                </div>
+
+                                <div>
+                                    <label htmlFor="username">email address</label>
+                                    <input 
+                                    type="email" 
+                                    name="email" 
+                                    id="email"  
+                                    required
+                                    autoComplete="off"
+                                    placeholder="xyz@.com"
+                                    />
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </section>
         </>
     )
