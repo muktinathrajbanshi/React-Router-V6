@@ -37,6 +37,18 @@ export const Contact = () => {
                                     />
                                 </div>
                             </div>
+
+                            <div className="mb-3">
+                                <label htmlFor="message">message</label>
+                                <textarea
+                                 name="message"
+                                  id="message"
+                                  cols="30"
+                                  rows="10"
+                                  placeholder="we are always here to help you."
+                                  ></textarea>
+                            </div>
+                            <button>Send Message</button>
                         </form>
                     </div>
                 </div>
