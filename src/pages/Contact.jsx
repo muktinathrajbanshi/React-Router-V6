@@ -50,7 +50,10 @@ export const Contact = () => {
                                   placeholder="we are always here to help you."
                                   ></textarea>
                             </div>
+                            <div className="mb-3">
                             <button>Send Message</button>
+                            </div>
+                           
                         </form>
                     </div>
                 </div>

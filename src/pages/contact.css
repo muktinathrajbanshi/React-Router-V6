@@ -28,12 +28,15 @@ label {
 }
 
 input {
-  width: 32rem;
+  width: 50rem;
   padding: 0.5em;
+  border: 1px solid #000;
 }
 
 textarea {
   padding: 1rem;
+  width: 50rem;
+  border: 1px solid #000;
 }
 
 .mb-3 {
@@ -51,4 +54,15 @@ textarea {
 
 button {
   margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  border: 1px solid red;
+  background-color: red;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  cursor: pointer;
+  width: 15rem;
 }
