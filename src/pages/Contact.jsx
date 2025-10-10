@@ -15,7 +15,7 @@ export const Contact = () => {
                     <div className="contact-content">
                         <form>
                             <div className="grid grid-two-cols mb-3">
-                                <div>
+                                <div className="input-field">
                                     <label htmlFor="username">full name</label>
                                     <input 
                                     type="text" 
@@ -27,7 +27,7 @@ export const Contact = () => {
                                     />
                                 </div>
 
-                                <div>
+                                <div className="input-field">
                                     <label htmlFor="username">email address</label>
                                     <input 
                                     type="email" 
