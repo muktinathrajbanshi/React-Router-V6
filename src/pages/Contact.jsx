@@ -30,14 +30,26 @@ export const Contact = () => {
                         <Form method="POST" action="/contact">
                             <div className="grid grid-two-cols mb-3">
                                 <div className="input-field">
-                                    <label htmlFor="username">full name</label>
+                                    <label htmlFor="firstname">first name</label>
                                     <input 
                                     type="text" 
-                                    name="username" 
-                                    id="username"  
+                                    name="firstname" 
+                                    id="firstname"  
                                     required
                                     autoComplete="off"
-                                    placeholder="enter full name"
+                                    placeholder="enter first name"
+                                    />
+                                </div>
+
+                                <div className="input-field">
+                                    <label htmlFor="lastname">last name</label>
+                                    <input 
+                                    type="" 
+                                    name="lastname" 
+                                    id="lastname"  
+                                    required
+                                    autoComplete="off"
+                                    placeholder="enter last name"
                                     />
                                 </div>
 
