@@ -1,4 +1,14 @@
 import "./contact.css";
+import { Form } from "react-router-dom";
+
+export const contactData = async () => {
+    try {
+        
+    } catch (error) {
+        console.log(error);
+        
+    }
+}
 
 export const Contact = () => {
     return (
@@ -13,7 +23,7 @@ export const Contact = () => {
 
                 <div className="grid grid-two--cols">
                     <div className="contact-content">
-                        <form>
+                        <Form method="POST" action="/contact">
                             <div className="grid grid-two-cols mb-3">
                                 <div className="input-field">
                                     <label htmlFor="username">full name</label>
@@ -54,7 +64,7 @@ export const Contact = () => {
                             <button>Send Message</button>
                             </div>
                            
-                        </form>
+                        </Form>
                     </div>
                 </div>
             </section>
