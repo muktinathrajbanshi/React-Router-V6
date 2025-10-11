@@ -1,14 +1,16 @@
 import "./contact.css";
 import { Form } from "react-router-dom";
 
-export const contactData = async () => {
+export const contactData = async ({ request }) => {
     try {
+        const res = await request.formData();
+        console.log(res);
         
     } catch (error) {
         console.log(error);
         
     }
-}
+};
 
 export const Contact = () => {
     return (
