@@ -41,8 +41,8 @@ export const App = () => {
         },
         {
           path: "/contact",
-          element:<Contact />,
-          action:contactData,
+          element: <Contact />,
+          action: contactData,
         },
         // {
         //   path:"*",
