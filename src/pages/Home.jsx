@@ -18,10 +18,18 @@ export const Home = () => {
               like Your Ultimate Guide to Must-Watch Content.
             </p>
             <div className="hero-btn">
-              <NavLink to="products.html" className="btn">
+              <NavLink to="/movie" className="btn">
                 Explore Now
               </NavLink>
             </div>
+          </div>
+          <div className="section-hero-image">
+            <img 
+            src="./home.jpg" 
+            alt="movies poster" 
+            width="150"  
+            height="150"
+            />
           </div>
         </div>
       </div>
