@@ -411,3 +411,22 @@ img {
 }
 
 /***** Loading Section Ends *****/
+
+/***** Home Section Starts*****/
+
+.section-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem;
+  /* background-color: #1e1f23; */
+}
+
+.section-hero .section-hero--content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/***** Home Section Ends *****/
