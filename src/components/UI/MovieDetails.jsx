@@ -10,9 +10,16 @@ export const MovieDetails = () => {
     return (
         <li className="hero-container hero-movie-container">
             <div className="main-container">
-                <div className="poster-container">
-                    <img src={Poster} className="poster" alt={Title} />
-                </div>
+
+                <figure className="movie">
+                    <div className="movie__hero">
+                        <img src={Poster} alt="Rambo" className="movie_img" />
+                    </div>
+                    <div className="movie__content">
+                        
+                    </div>
+                </figure>
+                
                 <div className="ticket-container">
                     <div className="ticket__content">
                         <h4 className="ticket__movie-title">{Title}</h4>
