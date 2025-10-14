@@ -24,6 +24,21 @@ export const MovieDetails = () => {
                             <div className="movie__tag movie__tag--2">Year: {Year}</div>
                         </div>
                         <div className="movie__description">{Plot}</div>
+                        <br />
+                        <p className="movie__description">Awards: {Awards}</p>
+                        <div className="movie__details">
+                            <p className="movie__detail">
+                                <span className="icons icons-red">
+                                    <i className="fas fa-camera-retro"></i>
+                                </span>
+                                Rating: {imdbRating}
+                            </p>
+                            <p className="movie__detail">
+                                <span className="icons icons-grey">
+                                    <i className="fas fa-clock"></i>
+                                </span>
+                            </p>
+                        </div>
                     </div>
                 </figure>
                 
