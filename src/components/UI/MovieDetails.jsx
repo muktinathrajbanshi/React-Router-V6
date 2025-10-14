@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { NavLink, useLoaderData } from "react-router-dom";
 import "../UI/Card.css";
 
 export const MovieDetails = () => {
@@ -37,9 +37,22 @@ export const MovieDetails = () => {
                                 <span className="icons icons-grey">
                                     <i className="fas fa-clock"></i>
                                 </span>
+                                {formattedTime}
+                            </p>
+                            <p className="movie__detail">
+                                <span className="icons icons-yellow">
+                                    <i className="fas fa-file-invoice-dollar"></i>
+                                </span>
+                                {BoxOffice}
                             </p>
                         </div>
                     </div>
+                    <NavLink
+                    to="/movie"
+                    className="movie__tag movie__tag--2"
+                    >
+
+                    </NavLink>
                 </figure>
                 
                 <div className="ticket-container">
