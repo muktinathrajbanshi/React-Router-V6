@@ -16,7 +16,14 @@ export const MovieDetails = () => {
                         <img src={Poster} alt="Rambo" className="movie_img" />
                     </div>
                     <div className="movie__content">
-                        
+                        <div className="movie__title">
+                            <h1>
+                                {Title} <i className="fas fa-fire"></i>
+                            </h1>
+                            <div className="movie__tag movie__tag--1">{`#${Type}`}</div>
+                            <div className="movie__tag movie__tag--2">Year: {Year}</div>
+                        </div>
+                        <div className="movie__description">{Plot}</div>
                     </div>
                 </figure>
                 
