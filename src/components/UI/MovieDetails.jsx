@@ -5,7 +5,18 @@ export const MovieDetails = () => {
     const movieData = useLoaderData();
     console.log(movieData);
     
-    const { Actor, Poster, Title, Type, Year, Plot, BoxOffice, imdbID } = movieData;
+    const { Actor, Poster, Title, Type, Year, Plot, BoxOffice, imdbID, Awards, imdbRating } = movieData;
+
+    const totalMinutes = Runtime.replace("min", "");
+    const hours = Math.floor(totalMinutes / 60);
+    const minutes = totalMinutes % 60;
+
+    console.log(hours, minutes);
+    
+    const formattedTime = `${hours}hr ${minutes}min`;
+    console.log(formattedTime);
+    
+
 
     return (
         <li className="hero-container hero-movie-container">
@@ -25,7 +36,28 @@ export const MovieDetails = () => {
                     <div className="movie__description">{Plot}</div>
                     <br />
                     <p className="movie__description">Awards: {Awards}</p>
+                    <div className="movie__details">
+                        <p className="movie__detail">
+                            <span className="icons icons-red">
+                                <i className="fas fa-camera-retro"></i>
+                            </span>
+                            Rating: {imdbRating}
+                        </p>
+                        <p className="movie__detail">
+                            <span className="icons icons-grey">
+                                <i className="fas fa-clock"></i>
+                            </span>
+                            {formattedTime}
+                        </p>
+                        <p className="movie__detail">
+                            <span className="icons icons-yellow">
+                                <i className="fas fa-line-invoice-dollar"></i>
+                            </span>
+                            {BoxOffice}
+                        </p>
+                    </div>
                  </div>
+
                </figure>
             </div>
         </li>
