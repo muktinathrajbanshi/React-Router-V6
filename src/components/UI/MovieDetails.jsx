@@ -75,6 +75,7 @@ export const MovieDetails = () => {
                     >
                     Go Back
                     </NavLink>
+                    <div className="movie__price">{BoxOffice}</div>
                </figure>
             </div>
         </li>
