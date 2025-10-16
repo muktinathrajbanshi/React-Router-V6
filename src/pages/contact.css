@@ -66,3 +66,24 @@ button {
   cursor: pointer;
   width: 15rem;
 }
+
+.custom-shape-divider-top-1760627476 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1760627476 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-top-1760627476 .shape-fill {
+  fill: #ffffff;
+}

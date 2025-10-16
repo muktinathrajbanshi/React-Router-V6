@@ -463,3 +463,22 @@ img {
 }
 
 /***** Home Section Ends *****/
+.custom-shape-divider-bottom-1760627935 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1760627935 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-bottom-1760627935 .shape-fill {
+  fill: #ffffff;
+}
